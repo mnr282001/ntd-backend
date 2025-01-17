@@ -92,14 +92,14 @@ const inputDate = new Date(date);
 const utcDate = new Date(Date.UTC(
   inputDate.getFullYear(), 
   inputDate.getMonth(), 
-  inputDate.getDate() + 2
+  inputDate.getDate() + 1
 ));
 
 // Get the next UTC day
 const nextUtcDay = new Date(Date.UTC(
   utcDate.getFullYear(), 
   utcDate.getMonth(), 
-  utcDate.getDate() + 3
+  utcDate.getDate() + 2
 ));
 
 // Format dates for Supabase query
